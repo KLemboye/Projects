@@ -6,6 +6,6 @@
 3. Ability for sales persons to be able to filter across all different types of products and customers for there respective geographical locations.
 4. What to know how forecasted budgeted annual sales compares to a actual annual sales.
 
-## Data Sources
+## Data Source
 ### Exisitng OLTP Data Model
 ### Existing OLAP Data Model
