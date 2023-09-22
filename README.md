@@ -1,4 +1,4 @@
-# Portfolio Project - Sales Management and Analysis
+# Project - Sales Management and Analysis
 
 ## Gathered Business Requirements
 1. Improvement of sales reports for Internet Sales only with transition from static reports to visual dashboards for better sales reporting.
