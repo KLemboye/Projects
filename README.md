@@ -9,4 +9,4 @@
 ## Data Source
 ### Exisitng OLTP Data Model
 ### Existing OLAP Data Model
-![alt text]
+![alt text] (https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/493ac4dbdba5d1db68aab577ae373e2b0639eb9e/OLAP%20DataSource.JPG)
