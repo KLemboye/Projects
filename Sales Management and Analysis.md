@@ -56,12 +56,71 @@ Order By
 
 **DimDate**
 ```
-
+Select 
+  DateKey, 
+  FullDateAlternateKey As Date, 
+  EnglishDayNameOfWeek As Day, 
+  WeekNumberOfYear As 'Week Number', 
+  EnglishMonthName As Month, 
+  Left(EnglishMonthName, 3) As MonthAbbreviation, 
+  MonthNumberOfYear As 'Month Number', 
+  CalendarQuarter As Quarter, 
+  CalendarYear As Year 
+From 
+  DimDate 
 ```
 
 **DimProduct**
 ```
-
+Select
+  P.ProductKey,
+  P.ProductAlternateKey As ProductItemCode,
+  P.EnglishProductName As 'Product Name',
+  PS.ProductSubcategoryAlternateKey As 'Product Subcategory Code',
+  Isnull(PS.EnglishProductSubcategoryName, 'NA') As 'Product Sub Category',
+  PC.ProductCategoryAlternateKey As 'Product Category Code',
+  Isnull(PC.EnglishProductCategoryName, 'NA') As 'Product Category',
+  P.Color As 'Product Colour',
+  Isnull(P.Size, 'NA') As 'Product Size',
+  Isnull(P.ProductLine, 'NA') As 'Product Line',
+  Isnull(P.ModelName, 'NA') As 'Product Model Name',
+  Isnull(P.EnglishDescription, 'NA') As 'Product Description',
+  Isnull(P.Status, 'Outdated') As 'Product Status'
+From
+  DimProduct As P
+Left Join DimProductSubcategory As PS
+  On P.ProductSubcategoryKey = PS.ProductSubcategoryKey
+Left Join DimProductCategory As PC
+  On PS.ProductCategoryKey = PC.ProductCategoryKey
+Order By
+ P.ProductKey
+```
+### Fact Table
+**FactInternetSales**
+```
+Select
+  ProductKey,
+  OrderDateKey,
+  DueDateKey,
+  ShipDate,
+  CustomerKey,
+  SalesOrderNumber,
+  SalesOrderLineNumber,
+  OrderQuantity,
+  UnitPrice,
+  ExtendedAmount,
+  UnitPriceDiscountPct,
+  DiscountAmount,
+  ProductStandardCost,
+  TotalProductCost,
+  SalesAmount As FactSalesAmount,
+  TaxAmt,
+  SalesAmount + TaxAmt As TotalPaidAmount
+From
+  FactInternetSales
+Where
+  Convert(Date,(Convert(Varchar, OrderDateKey)), 112) >= DateAdd(Year, -2, GetDate())
+Order By OrderDateKey
 ```
 
 ## Data Cleansing & Transformation
