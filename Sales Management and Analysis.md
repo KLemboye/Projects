@@ -1,4 +1,4 @@
-# Project - Sales Management and Analysis
+# Sales Management and Analysis
 
 ## Business Requirements Gathering
 The business requirements for this project was gathered from the sales manager and other business stakeholders who wanted an executive sales report for all online product sales. Based off the business requirement gathering sessions, the following business requirements as seen below were agreed to be the acceptable functional business requirements for the project.
