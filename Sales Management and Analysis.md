@@ -139,13 +139,8 @@ Below is the Sales Management Dashboard for the business's Internet Sales only. 
 
 [Sales Management](https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.svg)
 
-
-![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page1.jpg "Sales Overview")
-
-
-![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page2.jpg "Customer Sales Detail")
-
-
-![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page3.jpg "Product Sales Detail")
+![alt text](https://github.com/KLemboye/Projects/blob/69e2b15244a47aa2246066cec60bc0769757608f/InternetSales_Page1.jpg "Sales Overview")
+![alt text](https://github.com/KLemboye/Projects/blob/69e2b15244a47aa2246066cec60bc0769757608f/InternetSales_Page2.jpg "Customer Sales Detail")
+![alt text](https://github.com/KLemboye/Projects/blob/69e2b15244a47aa2246066cec60bc0769757608f/InternetSales_Page3.jpg "Product Sales Detail")
 
 
