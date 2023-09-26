@@ -134,9 +134,18 @@ Below is an image of the data model from Power BI after data cleasing and transf
 ![alt text](https://github.com/KLemboye/Projects/blob/c41b7837d5871e4f2d594e7b65df641ab946f836/Data%20Model_Power%20BI.JPG "Power BI Data Model")
 
 ## Sales Management Dashboard
-Below is the Sales Management Dashboard for the business's Internet Sales only. Page 1 (Sales Overview) gives an overall overview of product sales within the time period seen. Pages 2 (Customer Sales Details) and 3 (Product Sales Details) gives provides detailed insight and analysis on how the business sales interacts with the customer and product details respectively.
+Below is the Sales Management Dashboard for the business's Internet Sales only. Page 1 (Sales Overview) gives an overall overview of product sales within the time period seen. Pages 2 (Customer Sales Details) and 3 (Product Sales Details) provides detailed insight and analysis on how the business product sales interacts with the customer and product details respectively.
 
-https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.pdf
 
-![alt text](https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.pdf)
+[Sales Management](https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.svg)
+
+
+![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page1.jpg "Sales Overview")
+
+
+![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page2.jpg "Customer Sales Detail")
+
+
+![alt text](https://github.com/KLemboye/Projects/blob/f0e179aea5b9e0141a7d4f6a3568ba6cad87f830/InternetSales_Page3.jpg "Product Sales Detail")
+
 
