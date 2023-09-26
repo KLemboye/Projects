@@ -9,17 +9,20 @@ The business requirements for this project was gathered from the sales manager a
 
 ## Data Source
 This crucial step identifies all relevant data that needs to be collected, processed, and analyzed to address the business requirements while building the analytical environment. It is essential to regularly review and update data sources as needed so as to ensure that the analytics system continues to receive accurate and up to date data for analysis.
+
 Below here are the models for the existing OLTP (Online Transactional Processing) and OLAP (Online Analytical Processing) data sources. These data sources where modelled using Relational and SnowFlake Schema modeling respectively. There also exist an external data source (SalesBudget) that was provided in Excel format and will be connected to the data model in a later step of the process.
 ### OLTP Data Model
-![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource1.JPG "OLTTP Relational Model")
-![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource2.JPG "OLTTP Relational Model")
-![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource3.JPG "OLTTP Relational Model")
-![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource4.JPG "OLTTP Relational Model")
+![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource1.JPG "OLTTP Relational Model 1")
+![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource2.JPG "OLTTP Relational Model 2")
+![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource3.JPG "OLTTP Relational Model 3")
+![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/02e9d240e460d03a4fd9bd53e613a7c5f0c7651a/OLTP%20DataSource4.JPG "OLTTP Relational Model 4")
 ### OLAP Data Model
 ![alt text](https://github.com/KLemboye/SALES-ANALYSIS-PROJECT/blob/493ac4dbdba5d1db68aab577ae373e2b0639eb9e/OLAP%20DataSource.JPG "OLAP Snowflake Schema")
 
 ## Data Profiling
-The sole aim here is to understand the data’s overall quality, completeness, consistency and distribution. To Identify the different tables, their fields and relationship within the data model. Also, to understand the data types, lengths, and formats of the fields. This knowledge will help understand the overall structure and how it aligns with the expected results. The initial Data Profiling was done in SSMS (SQL Server Management Studio).
+The sole aim here is to understand the data’s overall quality, completeness, consistency and distribution. To Identify the different tables, their fields and relationship within the data model. Also, to understand the data types, lengths, and formats of the fields. This knowledge will help understand the overall structure and how it aligns with the expected results.
+
+Below is the preliminary Data Profiling done in SSMS (SQL Server Management Studio) by using SQL scripts to extrat the needed data that fulfills the business requirements for analysis.
 
 ### Dimension Tables
 **DimCustomer**
@@ -124,12 +127,14 @@ Order By OrderDateKey
 ```
 
 ## Data Cleansing & Transformation
+Upon data profiling in SSMS, Power Query inside of Power BI was used for the core data cleansing and transformation of the required data set needed to fully fulfill the business requirements for analysis. While cleaning, it is important to look out for outliers as they mosttimes negatively impact data analytics and reporting outcomes thus making the less reliable and invaluable.
 
-Clean the data, look out for outliers. This will ultimately lead to more reliable and valuable insights from the analytics system.
+Below is an image of the data model from Power BI after data cleasing and transformation. This data model also show how the external data source (FactInternetSalesBudget) have been connected to the data model via the Date dimension table.
 
+![alt text](https://github.com/KLemboye/Projects/blob/c41b7837d5871e4f2d594e7b65df641ab946f836/Data%20Model_Power%20BI.JPG "Power BI Data Model")
 
-To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.
+## Sales Management Dashboard
+Below is the Sales Management Dashboard for the business's Internet Sales only. Page 1 (Sales Overview) gives an overall overview of product sales within the time period seen. Pages 2 (Customer Sales Details) and 3 (Product Sales Details) gives provides detailed insight and analysis on how the business sales interacts with the customer and product details respectively.
 
-One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.
+![alt text](https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.pdf)
 
-Below are the SQL statements for cleansing and transforming necessary data.
