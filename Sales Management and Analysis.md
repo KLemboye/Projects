@@ -136,5 +136,7 @@ Below is an image of the data model from Power BI after data cleasing and transf
 ## Sales Management Dashboard
 Below is the Sales Management Dashboard for the business's Internet Sales only. Page 1 (Sales Overview) gives an overall overview of product sales within the time period seen. Pages 2 (Customer Sales Details) and 3 (Product Sales Details) gives provides detailed insight and analysis on how the business sales interacts with the customer and product details respectively.
 
+https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.pdf
+
 ![alt text](https://github.com/KLemboye/Projects/blob/a5dac8c2e7469ca6d1b232e7d7896062c1875c41/InternetSales.pdf)
 
